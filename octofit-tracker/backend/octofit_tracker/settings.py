@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-4+2a6x+*)q4zj1my@3ka9(z#bf#*op05s6cxa4y(q@5u@rfi2f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["supreme-space-fiesta-qg4wwjgvggc99q7-8000.app.github.dev", "localhost"]
 
 
 # Application definition
@@ -130,3 +130,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Enable CORS
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Disable SSL redirection
+SECURE_SSL_REDIRECT = False
+
+# Add codespace URL to trusted origins
+CSRF_TRUSTED_ORIGINS = ["https://supreme-space-fiesta-qg4wwjgvggc99q7-8000.app.github.dev"]
